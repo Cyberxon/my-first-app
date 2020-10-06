@@ -1,2 +1,7 @@
+<button 
+    class="btn btn-primary"
+    [disabled]="!canCreateServer"
+    (click)="onCreateServer()">Create Server!</button>
+<p>{{ serverCreated }}</p>
 <app-server></app-server>
 <app-server></app-server>
