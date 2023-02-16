@@ -3,7 +3,9 @@ steps:
     on:
       push:
         branches:
-          - 'main'
+          - 'master'
+          - 'next'
+          - 'beta-v10'
     uses: cycjimmy/semantic-release-action@v3
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
