@@ -4,7 +4,7 @@ steps:
     on:
       push:
         branches:
-          - master
+          - main
           - next
           - beta-v10
     env:
