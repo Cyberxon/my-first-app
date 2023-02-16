@@ -78,7 +78,9 @@
               "from": "beta-v10",
               "to": "next"
             }
-          ]
+          ],
+          "clearWorkspace": true,
+          "restoreWorkspace": true
         }
       ],
       "@semantic-release/npm",
