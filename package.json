@@ -83,6 +83,7 @@
               "to": "next"
             }
           ],
+          "backmergeStrategy": "merge",
           "clearWorkspace": true,
           "restoreWorkspace": true
         }
