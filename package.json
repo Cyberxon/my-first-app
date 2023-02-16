@@ -50,8 +50,7 @@
       "master",
       {
         "name": "next",
-        "channel": "beta-v10",
-        "prerelease": true
+        "channel": "beta-v10"
       },
       {
         "name": "beta-v10",
