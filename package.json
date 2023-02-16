@@ -84,7 +84,10 @@
             }
           ],
           "plugins": [
-            "@semantic-release/exec"
+            "@semantic-release/exec",
+            {
+              "successCmd": "echo 'Version in next is ${nextRelease.version}'"
+            }
           ],
           "message": "chore(release): Preparations for next release",
           "backmergeStrategy": "merge",
