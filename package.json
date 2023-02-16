@@ -83,6 +83,7 @@
               "to": "next"
             }
           ],
+          "message": "chore(release): Preparations for next release",
           "backmergeStrategy": "merge",
           "clearWorkspace": true,
           "restoreWorkspace": true
