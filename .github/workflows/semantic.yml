@@ -1,12 +1,10 @@
 steps:
   - name: Semantic Release
-    uses: cycjimmy/semantic-release-action@v3
     on:
       push:
         branches:
-          - main
-          - next
-          - beta-v10
+          - 'main'
+    uses: cycjimmy/semantic-release-action@v3
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
