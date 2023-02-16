@@ -84,10 +84,7 @@
             }
           ],
           "plugins": [
-            "@semantic-release/exec",
-            {
-              "successCmd": "echo 'Version in next is ${nextRelease.version}' > test.txt && git add test.txt"
-            }
+            "@semantic-release/exec"
           ],
           "clearWorkspace": true,
           "restoreWorkspace": true
