@@ -2,10 +2,6 @@ name: Release
 on:
   push:
     branches: [master, next, beta-v10]
-  workflow_run:
-    workflows: [ Release ]
-    types: [ completed ]
-    branches: [ beta-v10 ]
 jobs:
   release:
     name: Release

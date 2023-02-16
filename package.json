@@ -83,7 +83,10 @@
               "to": "next"
             }
           ],
-          "message": "fix(release): Preparations for next release",
+          "plugins": [
+            "@semantic-release/exec"
+          ],
+          "message": "chore(release): Preparations for next release",
           "backmergeStrategy": "merge",
           "clearWorkspace": true,
           "restoreWorkspace": true
