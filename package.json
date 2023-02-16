@@ -51,7 +51,7 @@
       "master",
       {
         "name": "next",
-        "channel": "next",
+        "channel": "beta-v10",
         "prerelease": true
       },
       {
@@ -81,12 +81,6 @@
             {
               "from": "beta-v10",
               "to": "next"
-            }
-          ],
-          "plugins": [
-            "@semantic-release/exec",
-            {
-              "successCmd": "echo 'Version in next is ${nextRelease.version}'"
             }
           ],
           "message": "chore(release): Preparations for next release",
