@@ -85,7 +85,6 @@
           ],
           "plugins": [
             [
-              "@semantic-release/commit-analyzer",
               {
                 "releaseRules": [
                   {
