@@ -83,8 +83,12 @@
               "to": "next"
             }
           ],
-          "message": "chore(release): Preparations for next release",
-          "backmergeStrategy": "merge",
+          "plugins": [
+            "@semantic-release/exec",
+            {
+              "successCmd": "echo 'Version in next is ${nextRelease.version}' > test.txt && git add test.txt"
+            }
+          ],
           "clearWorkspace": true,
           "restoreWorkspace": true
         }
