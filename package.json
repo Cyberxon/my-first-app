@@ -51,12 +51,12 @@
       "master",
       {
         "name": "next",
-        "channel": "beta-v10",
+        "channel": "next",
         "prerelease": true
       },
       {
         "name": "beta-v10",
-        "channel": "beta-v10",
+        "channel": "next",
         "prerelease": true
       }
     ],
@@ -74,21 +74,6 @@
         }
       ],
       "@semantic-release/release-notes-generator",
-      [
-        "@saithodev/semantic-release-backmerge",
-        {
-          "backmergeBranches": [
-            {
-              "from": "beta-v10",
-              "to": "next"
-            }
-          ],
-          "message": "feat(release): Preparations for next release",
-          "backmergeStrategy": "merge",
-          "clearWorkspace": true,
-          "restoreWorkspace": true
-        }
-      ],
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
