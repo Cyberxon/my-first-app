@@ -85,8 +85,7 @@
           ],
           "backmergeStrategy": "merge",
           "clearWorkSpace": true,
-          "mergeMode": "theirs",
-          "forcePush": true
+          "mergeMode": "ours"
         }
       ],
       "@semantic-release/npm",
