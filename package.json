@@ -51,12 +51,7 @@
       "master",
       {
         "name": "next",
-        "channel": "next-channel",
-        "prerelease": true
-      },
-      {
-        "name": "next",
-        "channel": "beta-v10",
+        "channels": ["next", "beta-v10"],
         "prerelease": true
       }
     ],
