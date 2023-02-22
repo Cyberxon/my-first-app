@@ -55,8 +55,8 @@
         "prerelease": true
       },
       {
-        "name": "beta-v10",
-        "channel": "next",
+        "name": "next",
+        "channel": "beta-v10",
         "prerelease": true
       }
     ],
