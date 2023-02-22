@@ -83,8 +83,6 @@
               "to": "next"
             }
           ],
-          "message": "feat(release): Preparations for next release",
-          "backmergeStrategy": "merge",
           "forcePush": true
         }
       ],
