@@ -84,7 +84,8 @@
             }
           ],
           "backmergeStrategy": "merge",
-          "mergeMode": "ours",
+          "clearWorkSpace": true,
+          "mergeMode": "theirs",
           "forcePush": true
         }
       ],
