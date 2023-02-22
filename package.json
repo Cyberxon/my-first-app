@@ -51,7 +51,7 @@
       "master",
       {
         "name": "next",
-        "channel": "next",
+        "channel": "next-channel",
         "prerelease": true
       },
       {
