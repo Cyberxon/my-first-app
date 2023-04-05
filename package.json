@@ -29,6 +29,7 @@
     "@angular-devkit/build-angular": "^15.1.6",
     "@angular/cli": "^15.1.6",
     "@angular/compiler-cli": "~10.1.4",
+    "@saithodev/semantic-release-backmerge": "^3.1.0",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -48,7 +49,11 @@
   "release": {
     "branches": [
       "master",
-      "next",
+      {
+        "name": "next",
+        "channel": "next",
+        "prerelease": true
+      },
       {
         "name": "beta-v10",
         "channel": "beta-v10",
@@ -69,6 +74,20 @@
         }
       ],
       "@semantic-release/release-notes-generator",
+      [
+        "@saithodev/semantic-release-backmerge",
+        {
+          "backmergeBranches": [
+            {
+              "from": "beta-v10",
+              "to": "next"
+            }
+          ],
+          "backmergeStrategy": "merge",
+          "clearWorkSpace": true,
+          "mergeMode": "ours"
+        }
+      ],
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
